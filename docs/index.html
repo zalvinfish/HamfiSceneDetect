@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<!--
+	HamfiSceneDetect (HamfiSD) — product landing page · Plan B
+	Layout inspired by "Stellar" by HTML5 UP (html5up.net | @ajlkn)
+	Visual theme derived from the Plan A build (based on "Fractal")
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>HamfiSD · CutPoint detection | Content analysis | Storyboard synthesis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="HamfiSceneDetect (HamfiSD) is a Windows desktop storyboard tool: 7 cut point detection modes, SVG template layouts, and AI shot descriptions. Export storyboard array videos (MP4) or storyboard sheets (PNG). Footage and caches stay on your machine by default." />
+		<meta name="author" content="ZalvinFish" />
+		<meta name="theme-color" content="#171F2B" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://zalvinfish.github.io/HamfiSceneDetect/" />
+		<meta property="og:site_name" content="HamfiSD" />
+		<meta property="og:title" content="HamfiSceneDetect (HamfiSD) · Video cut point detection and layout composition" />
+		<meta property="og:description" content="Break a long video into shots, then rebuild them into a storyboard sheet or a storyboard array video. 7 cut point detection modes, SVG templates, and AI shot descriptions; footage and caches stay local by default." />
+		<meta property="og:image" content="https://zalvinfish.github.io/HamfiSceneDetect/images/app-main.png" />
+		<link rel="icon" href="images/icon.ico" sizes="any" />
+		<link rel="icon" type="image/png" href="images/icon-256.png" />
+		<link rel="apple-touch-icon" href="images/icon-256.png" />
+		<link rel="stylesheet" href="assets/css/main.css?v=202611115" />
+		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+	</head>
+	<body>
+
+		<div id="wrapper">
+
+			<!-- Header · copy on top, app screenshot below -->
+				<header id="header">
+					<div class="hero-inner">
+						<h1>Hamfi<span>SceneDetect</span></h1>
+						<p class="lede">Video cut point detection, Shot content analysis, Template-based video processing</p>
+						<p class="sublede">Multiple detection modes · AI Content Detection · Fully local</p>
+						<ul class="actions special">
+							<li>
+								<div class="download-menu">
+									<button type="button" class="button primary icon solid fa-download download-toggle" aria-haspopup="true" aria-expanded="false">Download<i class="icon solid fa-chevron-down btn-caret"></i></button>
+									<ul class="download-list">
+										<li><a href="https://github.com/ZalvinFish/HamfiSceneDetect/releases" target="_blank" rel="noopener"><i class="icon brands fa-windows"></i><span>Windows</span></a></li>
+										<li><span class="disabled" aria-disabled="true"><i class="icon brands fa-apple"></i><span>macOS</span></span></li>
+										<li><span class="disabled" aria-disabled="true"><i class="icon brands fa-linux"></i><span>Linux</span></span></li>
+									</ul>
+								</div>
+								<p class="version">v0.5.260806</p>
+							</li>
+							<li><a href="#one" class="button">Explore Features<i class="icon solid fa-chevron-down btn-caret"></i></a></li>
+						</ul>
+					</div>
+
+					<figure class="app-window">
+						<div class="window-shell">
+							<div class="window-bar">
+								<i></i><i></i><i></i>
+							</div>
+							<img src="images/app-main.webp?v=20261109" width="1798" height="958" alt="HamfiSD Processor main workspace: template list on the left, video preview and threshold chart in the center, shot descriptions on the right, task queue at the bottom." />
+						</div>
+						<figcaption class="device-caption" aria-hidden="true"></figcaption>
+					</figure>
+				</header>
+
+			<!-- Nav · tab strip at the bottom of the header -->
+				<nav id="nav">
+					<a class="brand" href="#header" aria-label="HamfiSD home">
+						<img src="images/icon.svg" width="48" height="48" alt="" />
+						<span>Hamfi<b>SD</b></span>
+					</a>
+					<ul>
+						<li><a href="#header" class="active">Home</a></li>
+						<li><a href="#one">Workflow</a></li>
+						<li><a href="#two">Features</a></li>
+						<li><a href="#outputs">Outputs</a></li>
+						<li><a href="#three">Download</a></li>
+					</ul>
+					<div class="nav-aux">
+						<a class="github" href="https://github.com/ZalvinFish/HamfiSceneDetect" target="_blank" rel="noopener"><i class="icon brands fa-github"></i><span>GitHub</span></a>
+					</div>
+				</nav>
+
+			<!-- Main -->
+				<div id="main">
+
+					<!-- Workflow -->
+						<section id="one" class="main special">
+							<header class="major">
+								<p class="section-kicker">Workflow</p>
+								<h2>Customizable, Template-based Pipeline</h2>
+							</header>
+
+							<div class="workflow">
+								<article class="step">
+									<div class="step-top">
+										<span class="step-icon"><i class="icon solid fa-file-video"></i></span>
+										<h4>Import</h4>
+									</div>
+									<p>Import videos through multiple routes, read metadata, build a task list, and assign each task a template.</p>
+								</article>
+								<article class="step">
+									<div class="step-top">
+										<span class="step-icon"><i class="icon solid fa-cut"></i></span>
+										<h4>Detect</h4>
+									</div>
+									<p>Detect cut points with multiple modes, visualize thresholds, adjust thresholds and cut points interactively, and generate a shot list.</p>
+								</article>
+								<article class="step">
+									<div class="step-top">
+										<span class="step-icon"><i class="icon solid fa-robot"></i></span>
+										<h4>Describe</h4>
+									</div>
+									<p>Use a multimodal LLM with custom prompts to inspect every shot, generate the information you need, and summarize the results.</p>
+								</article>
+								<article class="step">
+									<div class="step-top">
+										<span class="step-icon"><i class="icon solid fa-layer-group"></i></span>
+										<h4>Compose</h4>
+									</div>
+									<p>Produce storyboard arrays in multiple formats from templates, and export shot data, mid-frame thumbnails, and video clips.</p>
+								</article>
+							</div>
+						</section>
+
+					<!-- Features -->
+						<section id="two" class="main">
+							<section class="spotlight">
+								<div class="frame">
+									<div class="frame-bar"><i></i><i></i><i></i></div>
+									<img src="images/templatelist.webp" width="1728" height="888" alt="HamfiSD template page: template cards (AniShotList, StaticShotList) on the left; default detector, threshold, AICD prompts, and output settings on the right." />
+								</div>
+								<div class="content">
+									<p class="kicker">Template</p>
+									<h3>Templates define not only the layout,<br />but also the processing</h3>
+									<p>A template is made of an SVG and a rules JSON: the SVG describes the composition style, while the JSON records placement rules and default settings. Each task's processing pipeline is also determined by its assigned template.</p>
+								</div>
+							</section>
+
+							<section class="spotlight">
+								<div class="frame">
+									<div class="frame-bar"><i></i><i></i><i></i></div>
+									<img src="images/tasklist.webp" width="893" height="301" alt="HamfiSD task queue: two tasks in the detection and output stages, with progress bars advancing in real time." />
+								</div>
+								<div class="content">
+									<p class="kicker">Multitask</p>
+									<h3>Run the task queue in parallel,<br />and get every task done at once</h3>
+									<p>Imported videos enter a task queue and can be processed in parallel; each task can have its own template, detection mode, and cut point adjustments. The task list shows every task's stage and progress in real time, keeping the whole run under control.</p>
+								</div>
+							</section>
+
+							<section class="spotlight">
+								<div class="frame frame-native">
+									<div class="frame-bar"><i></i><i></i><i></i></div>
+									<img src="images/scenedetector.webp" width="426" height="232" alt="HamfiSD detection mode dropdown: PySceneDetect Content / Adaptive / Threshold / Hash, OmniShotCut Default / CleanShot, and Import ShotCut CSV." />
+								</div>
+								<div class="content">
+									<p class="kicker">Detect</p>
+									<h3>Cut point detection with multiple modes,<br />fine-tuned from the chart</h3>
+									<p>Four CPU detection modes from PySceneDetect — Content / Adaptive / Threshold / Hash — plus two GPU modes from OmniShotCut, default / clean_shot, and direct import of cut point CSV files generated by Adobe Premiere. Thresholds and cut points are shown on a chart: drag the threshold line to adjust it, or exclude individual frames.</p>
+								</div>
+							</section>
+
+							<section class="spotlight">
+								<div class="frame frame-native">
+									<div class="frame-bar"><i></i><i></i><i></i></div>
+									<img src="images/shotlist.webp?v=20261110" width="300" height="384" alt="HamfiSD shot list: each shot shows a thumbnail, number, AI description, and regenerate button." />
+								</div>
+								<div class="content">
+									<p class="kicker">AICD</p>
+									<h3>Tell AI what you need,<br />and let it describe every shot</h3>
+									<p>Write prompts in the template, or define prompts for individual shots. A multimodal model describes each shot as you ask, and can also summarize the whole video. Results can be regenerated one by one or edited by hand before you confirm and compose. LM Studio / DeepSeek / OpenAI are included, and any compatible service can be connected.</p>
+								</div>
+							</section>
+
+							<ul class="icons labeled">
+								<li><span class="icon solid fa-desktop"><span class="label">Fully local processing — no data leaks</span></span></li>
+							</ul>
+						</section>
+
+					<!-- Outputs -->
+						<section id="outputs" class="main special">
+							<header class="major">
+								<p class="section-kicker">Output</p>
+								<h2>Customizable, Template-based Output</h2>
+							</header>
+
+							<div class="outputs">
+								<figure class="output-card">
+									<div class="media" data-zoom>
+										<img src="images/export-animatic.webp?v=20261109" width="960" height="540" alt="HamfiSD animated storyboard array sample: source video on the left, array switching shots and highlights with the playhead on the right." draggable="false" />
+										<button type="button" class="zoom-btn" aria-label="Enlarge preview" title="Enlarge preview"><i class="icon solid fa-search-plus"></i></button>
+									</div>
+									<figcaption>
+										<h4>Animated Storyboard Array <em>MP4</em></h4>
+										<p>A video composed from modules such as the source footage, video info, and an animated storyboard array; the composition style is freely defined by the template.</p>
+									</figcaption>
+								</figure>
+
+								<figure class="output-card">
+									<div class="media" data-zoom>
+										<img src="images/export-static.webp?v=20261110" width="1508" height="1095" alt="HamfiSD PNG storyboard sheet: title, author, description, source link, and a three-row grid of fifteen shot cards." draggable="false" />
+										<button type="button" class="zoom-btn" aria-label="Enlarge preview" title="Enlarge preview"><i class="icon solid fa-search-plus"></i></button>
+									</div>
+									<figcaption>
+										<h4>Storyboard Array <em>PNG</em></h4>
+										<p>A storyboard sheet composed from modules such as video info and the storyboard array; the composition style is freely defined by the template.</p>
+									</figcaption>
+								</figure>
+							</div>
+
+							<p class="demo-note">Sample footage: Hyundai “On To Better” — The Mill. Used for output demonstration only.</p>
+						</section>
+
+					<!-- Download -->
+						<section id="three" class="main special">
+							<header class="major">
+								<img class="download-icon" src="images/icon.svg" width="72" height="72" alt="HamfiSD app icon" />
+								<p class="section-kicker">Download</p>
+								<h2>Download Hamfi<span>SD</span>, start your task</h2>
+							</header>
+							<ul class="actions special">
+								<li><a href="https://github.com/ZalvinFish/HamfiSceneDetect/releases" target="_blank" rel="noopener" class="button primary icon solid fa-download">Download Latest</a></li>
+								<li><a href="https://github.com/ZalvinFish/HamfiSceneDetect" target="_blank" rel="noopener" class="button icon brands fa-github">View Source</a></li>
+							</ul>
+
+							<div class="reqs">
+								<div>
+									<h4>Requirements</h4>
+									<p>Windows 10 / 11 64-bit; WebView2 Runtime required; NVIDIA CUDA required for GPU detection.</p>
+								</div>
+							</div>
+						</section>
+
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://github.com/ZalvinFish/HamfiSceneDetect" target="_blank" rel="noopener" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://github.com/ZalvinFish/HamfiSceneDetect/releases" target="_blank" rel="noopener" class="icon solid fa-download"><span class="label">Releases</span></a></li>
+						<li><a href="https://github.com/ZalvinFish/HamfiSceneDetect/issues" target="_blank" rel="noopener" class="icon solid fa-exclamation-circle"><span class="label">Issues</span></a></li>
+					</ul>
+					<p class="copyright">&copy; 2026 ZalvinFish · HamfiSceneDetect (HamfiSD)</p>
+				</footer>
+
+		</div>
+
+		<!-- Lightbox -->
+			<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Full-size preview" aria-hidden="true">
+				<button type="button" class="lightbox-close" aria-label="Close preview">&times;</button>
+				<img src="" alt="" draggable="false" />
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/main.js?v=202611097"></script>
+
+	</body>
+</html>
