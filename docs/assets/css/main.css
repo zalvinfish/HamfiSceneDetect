@@ -705,6 +705,15 @@
 			position: absolute;
 			right: 1em;
 			top: 50%;
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-align-items: center;
+			-webkit-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
+			gap: 0.5em;
 			-webkit-transform: translateY(-50%);
 			transform: translateY(-50%);
 		}
@@ -737,6 +746,65 @@
 				#nav .nav-aux a .icon:before {
 					font-size: 0.95em;
 				}
+
+		/* Language switch (EN / 中文) — one pill, the active language is filled */
+
+			.lang-switch {
+				display: -moz-inline-flex;
+				display: -webkit-inline-flex;
+				display: -ms-inline-flex;
+				display: inline-flex;
+				-moz-align-items: center;
+				-webkit-align-items: center;
+				-ms-align-items: center;
+				align-items: center;
+				gap: 0.15em;
+				height: 2.1em;
+				padding: 0.15em;
+				border: solid 1px #E1E1EA;
+				border-radius: 999px;
+				background-color: #FFFFFF;
+				font-size: 0.72rem;
+				line-height: 1;
+			}
+
+				.lang-switch .lang-btn {
+					-moz-appearance: none;
+					-webkit-appearance: none;
+					appearance: none;
+					height: 100%;
+					margin: 0;
+					padding: 0 0.62em;
+					border: 0;
+					border-radius: 999px;
+					background-color: transparent;
+					color: #4A4A55;
+					font-size: 1em;
+					font-weight: 400;
+					letter-spacing: 0.02em;
+					cursor: pointer;
+					transition: background-color 0.2s ease, color 0.2s ease;
+				}
+
+					.lang-switch .lang-btn:hover {
+						color: var(--accent);
+					}
+
+					.lang-switch .lang-btn.is-active {
+						background-color: var(--accent);
+						color: #FFFFFF;
+					}
+
+					.lang-switch .lang-btn:focus-visible {
+						outline: solid 2px var(--accent);
+						outline-offset: 2px;
+					}
+
+			/* Hero copy of the switch — only shown where .nav-aux is hidden */
+
+			.hero-lang {
+				display: none;
+			}
 
 		#nav.is-stuck {
 			position: fixed;
@@ -1633,7 +1701,33 @@
 				}
 
 /* --------------------------------------------------------------------------
-   13. Responsive
+   13. Chinese (zh-Hans) typography
+   -------------------------------------------------------------------------- */
+
+	html[data-lang="zh"] h1,
+	html[data-lang="zh"] h2,
+	html[data-lang="zh"] h3,
+	html[data-lang="zh"] h4,
+	html[data-lang="zh"] #header h1,
+	html[data-lang="zh"] #header .lede {
+		letter-spacing: 0;
+	}
+
+	html[data-lang="zh"] p {
+		line-height: 1.85;
+	}
+
+	html[data-lang="zh"] .section-kicker,
+	html[data-lang="zh"] .kicker {
+		letter-spacing: 0.12em;
+	}
+
+	html[data-lang="zh"] .button {
+		letter-spacing: 0.02em;
+	}
+
+/* --------------------------------------------------------------------------
+   14. Responsive
    -------------------------------------------------------------------------- */
 
 	@media screen and (max-width: 1240px) {
@@ -1670,6 +1764,34 @@
 		#nav .nav-aux {
 			display: none;
 		}
+
+		.hero-lang {
+			position: absolute;
+			top: 1.3em;
+			right: 1.3em;
+			display: -moz-inline-flex;
+			display: -webkit-inline-flex;
+			display: -ms-inline-flex;
+			display: inline-flex;
+			z-index: 3;
+			border-color: rgba(255, 255, 255, 0.22);
+			background-color: rgba(255, 255, 255, 0.08);
+			-webkit-backdrop-filter: blur(8px);
+			backdrop-filter: blur(8px);
+		}
+
+			.hero-lang .lang-btn {
+				color: #D9D9E3;
+			}
+
+				.hero-lang .lang-btn:hover {
+					color: #FFFFFF;
+				}
+
+				.hero-lang .lang-btn.is-active {
+					background-color: #FFFFFF;
+					color: var(--accent);
+				}
 
 		#main > .main {
 			padding: 3.5em 2.5em;
@@ -1772,6 +1894,13 @@
 
 			#header .lede {
 				font-size: 1.02rem;
+			}
+
+			.hero-lang {
+				top: 1em;
+				right: 1em;
+				height: 2.7em;
+				font-size: 0.8rem;
 			}
 
 				#header .lede br {
